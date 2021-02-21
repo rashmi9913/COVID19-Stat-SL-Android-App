@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Treatments">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/drawer"
+            tools:openDrawer="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/linear_2">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#959393" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linear_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="270dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/card_2">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/linear_4">
+
+                                    <TextView
+                                        android:id="@+id/textView29"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Wear a mask. Save lives."
+                                        android:textAlignment="center"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_5"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/linear_6">
+
+                                        <ImageView
+                                            android:id="@+id/imageView8"
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="20dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/textView31"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/wear_mask" />
+
+                                        <TextView
+                                            android:id="@+id/textView31"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:lineSpacingExtra="10sp"
+                                            android:paddingTop="40dp"
+                                            android:text="Wear a mask"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/imageView8"
+                                            app:layout_constraintTop_toTopOf="parent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:layout_constraintBottom_toBottomOf="@id/linear_5"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/linear_7">
+
+                                        <TextView
+                                            android:id="@+id/textView34"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:lineSpacingExtra="10sp"
+                                            android:paddingTop="20dp"
+                                            android:text="Clean your hands"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/imageView9"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView9"
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginRight="40dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/textView34"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/wash_hands" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:layout_constraintBottom_toBottomOf="@id/linear_6"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <ImageView
+                                            android:id="@+id/imageView10"
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="40dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/textView35"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/distance" />
+
+                                        <TextView
+                                            android:id="@+id/textView35"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:lineSpacingExtra="10sp"
+                                            android:paddingTop="20dp"
+                                            android:text="Keep a safe distance"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/imageView10"
+                                            app:layout_constraintTop_toTopOf="parent" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="@id/card_1"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/card_3">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/linear_9">
+
+                                    <TextView
+                                        android:id="@+id/textView32"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Self care"
+                                        android:textAlignment="center"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_8"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="@id/linear_11">
+
+                                        <TextView
+                                            android:id="@+id/textView33"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:text="•If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces."
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/imageView11"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView11"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_gravity="center"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/textView33"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/hand" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        app:layout_constraintBottom_toBottomOf="@id/linear_10"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <ImageView
+                                            android:id="@+id/imageView12"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_gravity="center"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/textView36"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/doctor" />
+
+                                        <TextView
+                                            android:id="@+id/textView36"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:text="•Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible."
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/imageView12"
+                                            app:layout_constraintTop_toTopOf="parent" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="@id/card_2"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/linear_13">
+
+                                    <TextView
+                                        android:id="@+id/textView38"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Medical treatments"
+                                        android:textAlignment="center"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_12"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/textView37"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:paddingTop="20dp"
+                                            android:text="•If you have mild symptoms and are otherwise healthy, self-isolate and contact your medical provider or a COVID-19 information line for advice.
+                                                          •Seek medical care if you have a fever, cough, and difficulty breathing. Call in advance."
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="@id/imageView13"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView13"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_gravity="center"
+                                            app:srcCompat="@drawable/dr"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="@id/textView37"
+                                            app:layout_constraintTop_toTopOf="parent"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/navmenu"
+                app:menu="@menu/iconmenu"
+                app:headerLayout="@layout/nav_header"
+                android:layout_gravity="start"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

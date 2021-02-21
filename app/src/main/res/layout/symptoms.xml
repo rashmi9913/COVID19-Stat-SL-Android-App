@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Symptoms">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/drawer"
+            tools:openDrawer="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#959393" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linear_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/card_2">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/linear_4">
+
+                                    <TextView
+                                        android:id="@+id/textView11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Most common symptoms :"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_3"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imageView4"
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="20dp"
+                                            app:srcCompat="@drawable/cough" />
+
+                                        <TextView
+                                            android:id="@+id/textView12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:lineSpacingExtra="10sp"
+                                            android:paddingLeft="50dp"
+                                            android:paddingTop="40dp"
+                                            android:text="•Dry cough
+                                                      •Fever
+                                                      •Tiredness"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="@id/card_1"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/card_3">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/linear_6">
+
+                                    <TextView
+                                        android:id="@+id/textView13"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Most less symptoms :"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_5"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/textView14"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:paddingLeft="30dp"
+                                            android:text="•Headache
+                                                      •Aches and pains
+                                                      •Sore throat
+                                                      •Conjunctivitis
+                                                      •Diarrhoea
+                                                      •Loss of taste or smell"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView5"
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_marginTop="35dp"
+                                            android:layout_marginRight="20dp"
+                                            app:srcCompat="@drawable/headache" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="@id/card_2"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/card_4">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/lineaar_8">
+
+                                    <TextView
+                                        android:id="@+id/textView15"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:text="Serious symptoms :"
+                                        android:textColor="#32E0C4"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lineaar_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@id/linear_7"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imageView6"
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="20dp"
+                                            app:srcCompat="@drawable/pain" />
+
+                                        <TextView
+                                            android:id="@+id/textView16"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="30dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/el_messiri"
+                                            android:lineSpacingExtra="10sp"
+                                            android:paddingTop="40dp"
+                                            android:text="•Difficulty breathing
+                                                      •Chest pain
+                                                      •Loss of speech"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="30dp"
+                                app:cardBackgroundColor="#393E46"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="10dp"
+                                app:layout_constraintBottom_toBottomOf="@id/card_3"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView17"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/el_messiri"
+                                        android:gravity="center"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="10dp"
+                                        android:text="On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days."
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView7"
+                                        android:layout_width="125dp"
+                                        android:layout_height="125dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        app:srcCompat="@drawable/symptom" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/navmenu"
+                app:menu="@menu/iconmenu"
+                app:headerLayout="@layout/nav_header"
+                android:layout_gravity="start"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

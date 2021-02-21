@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/menu_breakdown"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="Breakdown of the situation" />
+
+    <item
+        android:id="@+id/menu_worldwide"
+        android:icon="@drawable/ic_baseline_system_update_alt_24"
+        android:title="Worldwide updates" />
+
+    <item
+        android:id="@+id/menu_sysmptoms"
+        android:icon="@drawable/ic_baseline_coronavirus_24"
+        android:title="Covid 19 symptoms" />
+
+    <item
+        android:id="@+id/menu_treatments"
+        android:icon="@drawable/ic_baseline_masks_24"
+        android:title="Prevention and treatments" />
+
+</menu>
