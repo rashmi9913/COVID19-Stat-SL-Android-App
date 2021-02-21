@@ -4,7 +4,7 @@ HPB API was used to get COVID 19 data.
 
 Screenshots!
 
-![main](https://user-images.githubusercontent.com/61895411/108629306-3d215880-7485-11eb-9371-1811f364829c.jpg)
+![main](https://user-images.githubusercontent.com/61895411/108629306-3d215880-7485-11eb-9371-1811f364829c.jpg | width=100)
 ![home](https://user-images.githubusercontent.com/61895411/108629303-3b579500-7485-11eb-8e89-2c8c3471e921.jpg)
 ![sidebar](https://user-images.githubusercontent.com/61895411/108629309-3e528580-7485-11eb-9f62-2d9097dbd028.jpg)
 ![dashboard](https://user-images.githubusercontent.com/61895411/108629301-38f53b00-7485-11eb-881b-c62eca94501b.jpg)
